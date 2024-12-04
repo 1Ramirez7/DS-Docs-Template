@@ -1,0 +1,21 @@
+{
+  "hash": "811639e2cee26ef8b4b42569c220972a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Gapminder Part 2\"\n\neditor: visual\nexecute:\n  keep-md: true\n\ndate: \"October 30, 2024\"\nwarnings: false\nformat:\n  html:\n    df-print: paged\n    code-fold: true\n    code-line-numbers: true\n---\n\n::: {.cell}\n\n```{.r .cell-code  code-fold=\"true\" code-summary=\"Show the code\"}\nif (!require(\"pacman\")) install.packages(\"pacman\")\npacman::p_load(tidyverse, gapminder)\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ngapminder2 <- gapminder |>\n  filter(country != \"Kuwait\")\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nweighted_avg_data <- gapminder2 |> \n  group_by(continent,year) |> \n  summarise(weight_mean_gdp = weighted.mean(gdpPercap, w=pop, na.rm = TRUE),\n            avg_pop = pop)\n\nggplot( ) +\n  geom_line(data = gapminder2, mapping = aes(x = year, y = gdpPercap, color = continent, group = country)) +\n  geom_point(data = gapminder2, mapping = aes(x = year, y = gdpPercap, color = continent, size = pop/100000)) +\n  geom_line(data = weighted_avg_data, mapping = aes(x = year, y = weight_mean_gdp, group = continent)) +\n  geom_point(data = weighted_avg_data, mapping = aes(x = year, y = weight_mean_gdp, size = avg_pop )) +\n  facet_wrap(~continent, nrow = 1) +\n  scale_size_continuous(name = \"Population (100k)\", breaks = c(1000, 2000, 3000), \n                        labels = c(\"10000\", \"20000\", \"30000\")) +\n  labs(x = \"Life Expectancy\", y = \"GDP per Capita\") +\n  labs(x = \"Year\", y = \"GDP Per Capita\") +\n  theme_bw()\n```\n\n::: {.cell-output-display}\n![](Gapminder-Part-2_files/figure-html/unnamed-chunk-3-1.png){width=960}\n:::\n:::\n",
+    "supporting": [
+      "Gapminder-Part-2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

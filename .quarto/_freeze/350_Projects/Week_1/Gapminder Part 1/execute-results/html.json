@@ -1,0 +1,21 @@
+{
+  "hash": "a5b9140be98f4399cf642e9bb8a1fdfb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Gapminder Part 1\"\n\neditor: visual\nexecute:\n  keep-md: true\n\ndate: \"September 24, 2024\"\nwarnings: false\nformat:\n  html:\n    df-print: paged\n    code-fold: true\n    code-line-numbers: true\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nno_kuwait <- gapminder |>\n  filter(country != \"Kuwait\")\n\np <- ggplot(data = no_kuwait, aes(x = lifeExp, y = gdpPercap, size = pop/100000, color = continent)) +\n  geom_point() +\n  scale_y_continuous(trans = 'sqrt', limits = c(0, 50000)) +  # Square root transformation on y-axis\n  labs(title = \"Life Expectancy vs. GDP per Capita by Year\",\n       x = \"Life Expectancy (years)\",\n       y = \"GDP per Capita\",\n       size = \"Population (100K)\",\n       color = \"Continent\") +\n  theme_bw() +  # Use a basic white theme\n  facet_wrap(~ year, ncol = 12) +\n  theme(plot.title = element_text(size = 28, hjust = 0.5)) +\n  theme(axis.title = element_text(size = 15, hjust = 0.5)) +\n  theme(axis.text = element_text(size = 10, hjust = 0.5))\n   \n\np\n```\n\n::: {.cell-output-display}\n![](Gapminder-Part-1_files/figure-html/unnamed-chunk-2-1.png){width=1152}\n:::\n:::\n",
+    "supporting": [
+      "Gapminder-Part-1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

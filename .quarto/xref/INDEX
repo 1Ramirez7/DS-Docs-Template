@@ -1,0 +1,260 @@
+{
+  "350_Projects/Week_1/Gapminder Part 1.qmd": {
+    "Gapminder Part 1.html": "ce96caa8"
+  },
+  "250_Projects/project0.qmd": {
+    "project0.html": "b8b0f002"
+  },
+  "250_Projects/project1.qmd": {
+    "project1.html": "fba60ac1"
+  },
+  "250_Projects/project2.qmd": {
+    "project2.html": "636eee61"
+  },
+  "250_Projects/project3.qmd": {
+    "project3.html": "a3729839"
+  },
+  "250_Projects/project4.qmd": {
+    "project4.html": "f740a8c2"
+  },
+  "250_Projects/project5.qmd": {
+    "project5.html": "5ff52757"
+  },
+  "250_Projects/project6.qmd": {
+    "project6.html": "d3c1a367"
+  },
+  "250_projects.qmd": {
+    "250_projects.html": "05a48eba"
+  },
+  "350_Projects/week_02.qmd": {
+    "week_02.html": "f49d33ba"
+  },
+  "350_Projects/week_03.qmd": {
+    "week_03.html": "7b61ed23"
+  },
+  "350_Projects/week_04.qmd": {
+    "week_04.html": "6db3a1cd"
+  },
+  "350_Projects/week_05.qmd": {
+    "week_05.html": "34f0fb3b"
+  },
+  "350_Projects/week_06.qmd": {
+    "week_06.html": "d324d430"
+  },
+  "350_Projects/week_07.qmd": {
+    "week_07.html": "0377f1c1"
+  },
+  "350_Projects/week_08.qmd": {
+    "week_08.html": "630a261a"
+  },
+  "350_Projects/week_09.qmd": {
+    "week_09.html": "441f3547"
+  },
+  "350_Projects/Week_1/Visualizing Large Distributions.qmd": {
+    "Visualizing Large Distributions.html": "cf311320"
+  },
+  "350_Projects/Week_1/week_01.qmd": {
+    "week_01.html": "8f7f084e"
+  },
+  "350_Projects/week_10.qmd": {
+    "week_10.html": "5a93e644"
+  },
+  "350_Projects/week_11.qmd": {
+    "week_11.html": "be38e826"
+  },
+  "350_Projects/week_12.qmd": {
+    "week_12.html": "f046be40"
+  },
+  "350_Projects/week_13.qmd": {
+    "week_13.html": "562e6220"
+  },
+  "350_projects.qmd": {
+    "350_projects.html": "47e422cb"
+  },
+  "450_Projects/project0.qmd": {
+    "project0.html": "bc5c8243"
+  },
+  "450_Projects/project1.qmd": {
+    "project1.html": "e100ae2d"
+  },
+  "450_Projects/project2.qmd": {
+    "project2.html": "edfdd5dd"
+  },
+  "450_Projects/project3.qmd": {
+    "project3.html": "0e64f69a"
+  },
+  "450_Projects/project4.qmd": {
+    "project4.html": "71063e74"
+  },
+  "450_Projects/project5.qmd": {
+    "project5.html": "2846a0ad"
+  },
+  "450_Projects/project6.qmd": {
+    "project6.html": "8ed5ec26"
+  },
+  "450_projects.qmd": {
+    "450_projects.html": "37148501"
+  },
+  "460_Projects/project0.qmd": {
+    "project0.html": "a1735cc0"
+  },
+  "460_Projects/project1.qmd": {
+    "project1.html": "d3c55986"
+  },
+  "460_Projects/project2.qmd": {
+    "project2.html": "d1f9ac33"
+  },
+  "460_Projects/project3.qmd": {
+    "project3.html": "9017f995"
+  },
+  "460_Projects/project4.qmd": {
+    "project4.html": "e3be2b3f"
+  },
+  "460_Projects/project5.qmd": {
+    "project5.html": "48549758"
+  },
+  "460_Projects/project6.qmd": {
+    "project6.html": "e468aac0"
+  },
+  "460_projects.qmd": {
+    "460_projects.html": "d32a9004"
+  },
+  "index.qmd": {
+    "index.html": "12ee8de7"
+  },
+  "resume.qmd": {
+    "resume.html": "520d8692"
+  },
+  "Templates/DS250_Template.qmd": {
+    "DS250_Template.html": "0a43cdd6"
+  },
+  "Templates/DS350_Template.qmd": {
+    "DS350_Template.html": "a48d12f5"
+  },
+  "350_Projects/Week_04/Stock Data.qmd": {
+    "Stock Data.html": "d871b223"
+  },
+  "350_Projects/Week_01/week_01.qmd": {
+    "week_01.html": "d89e27fb"
+  },
+  "350_Projects/Week_02/Gapminder Part 1.qmd": {
+    "Gapminder Part 1.html": "ad7206aa"
+  },
+  "350_Projects/Week_02/Visualizing Large Distributions.qmd": {
+    "Visualizing Large Distributions.html": "ea652fea"
+  },
+  "350_Projects/Week_02/week_02.qmd": {
+    "week_02.html": "8d6075e2"
+  },
+  "350_Projects/Week_03/Gapminder Part 2.qmd": {
+    "Gapminder Part 2.html": "3772af79"
+  },
+  "350_Projects/Week_03/Reducing Gun Deaths.qmd": {
+    "Reducing Gun Deaths.html": "1366ff64"
+  },
+  "350_Projects/Week_03/week_03.qmd": {
+    "week_03.html": "9d3162e4"
+  },
+  "350_Projects/Week_03/Wings to Fly.qmd": {
+    "Wings to Fly.html": "c2754075"
+  },
+  "350_Projects/Week_04/Combining Height Files.qmd": {
+    "Combining Height Files.html": "9a49dd5e"
+  },
+  "350_Projects/Week_04/Mean Heights of Countries Over Time.qmd": {
+    "Mean Heights of Countries Over Time.html": "e57ec3f1"
+  },
+  "350_Projects/Week_04/week_04.qmd": {
+    "week_04.html": "8e97c762"
+  },
+  "350_Projects/Week_05/13_Polish_a_Previous_Visualization.qmd": {
+    "13_Polish_a_Previous_Visualization.html": "57b755ef"
+  },
+  "350_Projects/Week_05/14_Our_World_in_Data_Part_1.qmd": {
+    "14_Our_World_in_Data_Part_1.html": "f2845ec5"
+  },
+  "350_Projects/Week_05/15_Choose_Your_Own_OWD.qmd": {
+    "15_Choose_Your_Own_OWD.html": "5015a6a0"
+  },
+  "350_Projects/Week_05/week_05.qmd": {
+    "week_05.html": "9e872e18"
+  },
+  "350_Projects/Week_06/16_Age_of_Planes.qmd": {
+    "16_Age_of_Planes.html": "716ddd4f"
+  },
+  "350_Projects/Week_06/18_BYU_Baseball.qmd": {
+    "18_BYU_Baseball.html": "fd59d839"
+  },
+  "350_Projects/Week_06/week_06.qmd": {
+    "week_06.html": "4e09f035"
+  },
+  "350_Projects/Week_07/Car_Wash_25.qmd": {
+    "Car_Wash_25.html": "b9bb385f"
+  },
+  "350_Projects/Week_07/week_07.qmd": {
+    "week_07.html": "1de6a9f5"
+  },
+  "350_Projects/Week_08/week_08.qmd": {
+    "week_08.html": "ddca7dda"
+  },
+  "350_Projects/Week_09/week_09.qmd": {
+    "week_09.html": "1580538e"
+  },
+  "350_Projects/Week_10/week_10.qmd": {
+    "week_10.html": "fc602b3d"
+  },
+  "350_Projects/Week_11/week_11.qmd": {
+    "week_11.html": "36b962c3"
+  },
+  "350_Projects/Week_12/week_12.qmd": {
+    "week_12.html": "30e5a16c"
+  },
+  "350_Projects/Week_13/week_13.qmd": {
+    "week_13.html": "a41cee67"
+  },
+  "350_Projects/Week_07/car_wash_25.qmd": {
+    "car_wash_25.html": "0cbeea34"
+  },
+  "350_Projects/Week_07/its_about_time_26.qmd": {
+    "its_about_time_26.html": "9be6d7da"
+  },
+  "350_Projects/Week_07/stocks_27.qmd": {
+    "stocks_27.html": "ab7d7769"
+  },
+  "350_Projects/Week_08/building_the_past_30.qmd": {
+    "building_the_past_30.html": "a74d9271"
+  },
+  "350_Projects/Week_08/get_in_shp_29.qmd": {
+    "get_in_shp_29.html": "84b5e22d"
+  },
+  "350_Projects/Week_08/us_cities_28.qmd": {
+    "us_cities_28.html": "cec9eae8"
+  },
+  "350_Projects/Week_09/data_search_38.qmd": {
+    "data_search_38.html": "c0a81e87"
+  },
+  "350_Projects/Week_09/interactive_maps_31.qmd": {
+    "interactive_maps_31.html": "5dcea1c2"
+  },
+  "350_Projects/Week_10/counting_words_20.qmd": {
+    "counting_words_20.html": "ea7ccf57"
+  },
+  "350_Projects/Week_10/distance_between_savior_names_part1_21.qmd": {
+    "distance_between_savior_names_part1_21.html": "c2b11920"
+  },
+  "350_Projects/Week_10/strings_and_regex_19.qmd": {
+    "strings_and_regex_19.html": "e6953d6a"
+  },
+  "350_Projects/Week_12/chipotle_functions_22.qmd": {
+    "chipotle_functions_22.html": "bff36bad"
+  },
+  "350_Projects/Week_12/chipotle_purrr_23.qmd": {
+    "chipotle_purrr_23.html": "f74d5477"
+  },
+  "350_Projects/Week_12/distance_between_savior_names_part2_24.qmd": {
+    "distance_between_savior_names_part2_24.html": "c979b316"
+  },
+  "githubPush_notes.md": {
+    "githubPush_notes.html": "f5da0452"
+  }
+}

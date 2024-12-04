@@ -1,0 +1,19 @@
+{
+  "hash": "94e30b626e15a6a33f868c673ac1dbed",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"25  Car Wash\"\nauthor: \"your-name-here\"\n\neditor: visual\nexecute:\n  keep-md: true\n\ndate: \"October 30, 2024\"\nwarnings: false\nformat:\n  html:\n    df-print: paged\n    code-fold: true\n    code-line-numbers: true\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n# Load necessary libraries\nif (!require(\"pacman\")) install.packages(\"pacman\")\npacman::p_load(tidyverse)\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

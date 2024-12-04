@@ -1,0 +1,19 @@
+{
+  "hash": "75f5de73f00fe7ece39434577b8cdff9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Our World in Data Part 1\"\nauthor: \"your-name-here\"\n\neditor: visual\nexecute:\n  keep-md: true\n\ndate: \"October 30, 2024\"\nwarnings: false\nformat:\n  html:\n    df-print: paged\n    code-fold: true\n    code-line-numbers: true\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n# library loader\n\nif (!require(\"pacman\")) install.packages(\"pacman\")\npacman::p_load(tidyverse)\n\n# leaving read data file code. \n# Load data\nextreme_poverty_data <- read_csv(\"data/share-of-population-in-extreme-poverty.csv\")\nextreme_poverty_data1 <- read_csv(\"data/share-of-population-in-extreme-poverty.csv\")\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

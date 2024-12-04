@@ -1,0 +1,21 @@
+{
+  "hash": "259a58f8568db49285647ee3e7a7999c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Reducing Gun Deaths\"\n\neditor: visual\nexecute:\n  keep-md: true\n\ndate: \"November 01, 2024\"\nwarnings: false\nformat:\n  html:\n    df-print: paged\n    code-fold: true\n    code-line-numbers: true\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n# library loader\nif (!require(\"pacman\")) install.packages(\"pacman\")\npacman::p_load(tidyverse, ggplot2)\n\ngun_death <- read_csv(\"https://raw.githubusercontent.com/fivethirtyeight/guns-data/refs/heads/master/full_data.csv\") #tidy r version, everything read in as a tibble\n```\n:::\n\n\n## Graph 1\n\ntest\n\n\n::: {.cell}\n\n```{.r .cell-code}\nsummary_data <- gun_death %>%\n  group_by(month, age, intent) %>%\n  summarise(count = n(), .groups = 'drop')\n\nggplot(data = summary_data, mapping = aes(x = month, y = count, fill = intent)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  scale_color_brewer(palette = \"Set1\") +\n  labs(title = \"Deaths by Month and Intent\",\n       x = \"Month\",\n       y = \"Number of Deaths\") +\n  theme_bw() +\n  theme(legend.position = \"bottom\",\n        panel.grid.minor.x = element_blank(),\n        axis.ticks.length = unit(6, \"pt\"),\n        plot.title = element_text(family = \"serif\", hjust = 0.5)\n        ) \n```\n\n::: {.cell-output-display}\n![](Reducing-Gun-Deaths_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n## Graph 2\n\n\n::: {.cell}\n\n```{.r .cell-code}\ngun_death2 <- gun_death %>% \n  mutate(month = as.numeric(month)) %>% \n  mutate(\n    season = case_when(\n      month %in% c(12,1,2) ~\"Winter\",\n      month %in% c(3,4,5) ~ \"Spring\",\n      month %in% c(6,7,8) ~ \"Summer\",\n      month %in% c(9,10,11) ~ \"Fall\" \n    )\n  ) \n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ngun_death_final <- gun_death2 %>% \n  group_by(sex, race, season) %>% \n  summarise(count = n(), .groups = 'drop') %>% \n  mutate(season_factor = factor(season, levels = c(\"Spring\", \"Summer\", \"Fall\", \"Winter\")))\n\nggplot(data = gun_death_final, mapping = aes(x = sex, y = count, fill = race)) +\n  geom_bar(stat = \"identity\", position = \"dodge\", color = \"black\") +\n  facet_wrap(~ season_factor) +\n  theme_bw()\n```\n\n::: {.cell-output-display}\n![](Reducing-Gun-Deaths_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\nFrom the graph, we observe that males generally have a higher death rate. Additionally, seasonal changes do not appear to make a significant difference in this trend.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Summarize data\ngun_death_final <- gun_death2 %>% \n  group_by(education, race, season) %>% \n  summarise(count = n(), .groups = 'drop') %>% \n  mutate(season_factor = factor(season, levels = c(\"Spring\", \"Summer\", \"Fall\", \"Winter\")))\n\n# Create the plot\nggplot(data = gun_death_final, mapping = aes(x = race, y = count, fill = education)) +\n  geom_bar(stat = \"identity\", position = \"dodge\", color = \"black\") +\n  facet_wrap(~ season_factor) +\n  theme_bw() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +  # Ensure this is applied after theme_bw()\n  labs(x = \"Race\", y = \"Count of Gun Deaths\", title = \"Gun Deaths by Race, Education, and Season\") +\n  theme(legend.title = element_blank())\n```\n\n::: {.cell-output-display}\n![](Reducing-Gun-Deaths_files/figure-html/unnamed-chunk-5-1.png){width=672}\n:::\n:::\n\n\nThis graph illustrates the correlation between death counts, season, education level, and race. It appears that individuals with a high school diploma or GED have a higher number of death cases, regardless of their race.\n",
+    "supporting": [
+      "Reducing-Gun-Deaths_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

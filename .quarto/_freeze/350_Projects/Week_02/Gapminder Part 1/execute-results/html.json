@@ -1,0 +1,21 @@
+{
+  "hash": "eb79a9cdaf2f0a8c75dcb0b98f48251a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Gapminder Part 1\"\n\neditor: visual\nexecute:\n  keep-md: true\n\ndate: \"October 30, 2024\"\nwarnings: false\nformat:\n  html:\n    df-print: paged\n    code-fold: true\n    code-line-numbers: true\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n# load libraries \nif (!require(\"pacman\")) install.packages(\"pacman\")\npacman::p_load(gapminder, tidyverse)\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ngapminder2 <- gapminder %>% \n  filter(country != \"Kuwait\")\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot (data = gapminder2, mapping = aes(x =lifeExp, y = gdpPercap, color = continent, size = pop)) +\n  geom_point() +\n  facet_grid(.~year) +\n  scale_y_continuous(trans = \"sqrt\") +\n  scale_size_continuous(name = \"Population (100k)\", breaks = c(250000000, 500000000, 750000000, 1000000000, 1250000000), \n                        labels = c(\"2500\", \"5000\", \"7500\", \"10000\", \"12500\")) +\n  labs(x = \"Life Expectancy\", y = \"GDP per Capita\") +\n  theme_bw()\n```\n\n::: {.cell-output-display}\n![](Gapminder-Part-1_files/figure-html/unnamed-chunk-3-1.png){width=960}\n:::\n:::\n",
+    "supporting": [
+      "Gapminder-Part-1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
