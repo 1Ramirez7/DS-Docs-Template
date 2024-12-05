@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: Erin Hu's CV
+title: Issac Newton's CV
 ---
 # Isaac Newton
 Physicist, Mathematician, Cambridge professor.
